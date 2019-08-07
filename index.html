@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chase's Macro Counter</title>
+  </head>
+  <body style="background: linear-gradient(#4CAF50, #00BCD4);
+  height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;">
+    <link rel="stylesheet" href="index.css">
+    <center>
+      <h1>Chase's Macro Counter</h1>
+      <div class="currentMacros">
+        <label for="protein">Protein</label><input type="number" name="protein" value="" id="proteinToday" style="width:3em"></input> g
+
+        <label for="carbs">Carbs</label><input type="number" name="carbs" value="" id="carbsToday" style="width:3em"></input>g
+        <label for="fat">Fat</label><input type="number" name="fat" value="" id="fatToday" style="width:3em"></input>g
+        <label for="protein">Fiber</label><input type="number" name="fiber" value="" id="fiber" style="width:3em"></input> g
+
+        <button id="check">check</button>
+      </div>
+  <div class="macrosLeft" style="padding-top: 1em">
+    To reach the goal of <span id="carbGoal">112</span>g of carbs, <span id="fatGoal">100</span>g of fat, and
+    <span id="proteinGoal">224</span>g of protein, you need to eat:
+
+    <div style="font-size: 24pt; color:white">
+      <span style="float: left; padding-left:2em"><span id="carbsLeft"></span>g carbs</span>
+      <span><span id="fatLeft"></span>g fat</span>
+      <span style="float: right; padding-right:2em"><span id="proteinLeft"></span>g protein</span>
+      </div>
+  </div>
+</center>
+
+<!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="calculateMacros.js"></script>
+  </body>
+</html>
